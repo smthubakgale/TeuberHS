@@ -7,6 +7,17 @@
 .i-redo2:before { content: "\e904"; }   
 .i-pages:before { content: "\e905"; }   
 .i-coach:before { content: "\e906"; }   
+
+.i-library:before { content: "\e907"; }   
+.i-hotel:before { content: "\e908"; }   
+.i-school:before { content: "\e909"; }   
+.i-shop:before { content: "\e90a"; }   
+.i-hospital:before { content: "\e90b"; }   
+.i-industrial:before { content: "\e90c"; }   
+.i-corporate:before { content: "\e90d"; }   
+.i-residential:before { content: "\e90e"; } 
+
+.i-notebook:before { content: "\e00a"; }   
    
 @font-face { font-family: 'teuber'; src: url('custom/uml.ttf') format('truetype'); }  
 .u-node:before {  content: "\f900"; } 

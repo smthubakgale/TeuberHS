@@ -1,0 +1,50 @@
+﻿/*
+    Thubakgale MS - 201701870
+    27-10-2021
+ */ 
+/*Slide 1*/
+
+.slide::-webkit-scrollbar {
+    display: none;
+}  
+.slide div::-webkit-scrollbar {
+    display: none;
+}
+.slide div div::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    transition: ease 3s; 
+}
+/*Slide 2*/
+.arr1 {
+    position: absolute; 
+    left: 0%;
+} 
+.arr2 {
+    position: absolute; 
+    left: 100%;
+}
+
+.sld_cnt {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+.sld_ct {
+    margin:auto; 
+    overflow-x:hidden;
+}
+.sld_cn {
+    overflow-x: scroll
+}
+
+    .sld_cn::-webkit-scrollbar {
+        display: none;
+    }
+
+.sld {
+    display: flex;
+}
+ 

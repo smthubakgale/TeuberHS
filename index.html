@@ -6,148 +6,536 @@
     <title> Teuber - Home Security </title>
     <link rel="shortcut icon" type="image/png" href="assets/img/icons/icon.ico">
     <!-- Default CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <!-- Imported CSS-->
-    <link rel="stylesheet" href="assets/icons/i_custom.css"> 
-    <link rel="stylesheet" href="assets/icons/i_font-awesome.css"> 
-    <link rel="stylesheet" href="assets/fonts/f_custom.css"> 
+    <link rel="stylesheet" href="assets/icons/i_custom.css">
+    <link rel="stylesheet" href="assets/icons/i_font-awesome.css">
+    <link rel="stylesheet" href="assets/fonts/f_custom.css">
+    <link rel="stylesheet" href="assets/css/slidegrid.css">
     <!-- Layout Script -->
-    <script src="assets/js/jquery.min.js"></script> 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slidegrid.js"></script> 
     <!--::-->
 </head>
 <body>
 
     <main>
 
-        <div style="position:relative; max-width:100%;">
+        <div style="position:relative; max-width:100%; max-height:100vh; padding-top:58px; overflow:hidden;">
             <!--1. Page-->
             <div class="mbody">
-                <style>
-                    .mbody {
-                        height: 100vh;
-                        overflow-y: scroll;
-                    }
-                        /* width */
-                        .mbody::-webkit-scrollbar {
-                            width: 15px;
+                <div style="margin-top: -58px">
+                    <style>
+                        .mbody {
+                            height: 90vh;
+                            overflow-y: scroll; 
                         }
+                            /* width */
+                            .mbody::-webkit-scrollbar {
+                                width: 15px;
+                            }
 
-                        /* Track */
-                        .mbody::-webkit-scrollbar-track {
-                            box-shadow: inset 0 0 5px grey;
-                        }
+                            /* Track */
+                            .mbody::-webkit-scrollbar-track {
+                                box-shadow: inset 0 0 5px grey;
+                            }
 
-                        /* Handle */
-                        .mbody::-webkit-scrollbar-thumb {
-                            background: #717A7F;
-                            border-radius: 10px;
-                        }
-                </style>
-                <!-- Banner -->
-                <section>
-                    <div style="position:relative; width:100%; margin-top:40px;">
-                        <img src="assets/img/other/banner.jpg" style="width:100%; height:80vh;" />
-                        <div style="position: absolute; width: 100%; top: 0px; left: 0px; height: 80vh; color: white; background-image: linear-gradient(to right , rgba(30, 86, 128,1), rgba(0,0,0,0.3)); ">
-                            <div style="margin-top: 15vh; margin-left: 15px; cursor: pointer; font-size: 18px; font-weight: 600;">
-                                Trusted Security Company
-                            </div>
-                            <div style="margin-top: 5vh; margin-left: 15px; cursor: pointer; font-size: 30px; font-weight: 800; ">
-                                A Security System for <br/>
-                                Modern Lifestyle
-                            </div>
-                            <div style="margin-top: 3vh; margin-left: 15px; cursor: pointer; font-size: 17px; font-weight: 600; ">
-                                We have reviewed Atleast 3 Security Features to bring you <br/>
-                                a secuity System you can trust. 
-                            </div>
-                            <div style="margin-top: 6vh; margin-left: 15px; cursor:pointer; font-size: 18px; font-weight: 600; padding: 12px; border-radius:8px; text-align:center; width: 190px; background-color: #EB4343; ">
-                                Talk to an expert 
+                            /* Handle */
+                            .mbody::-webkit-scrollbar-thumb {
+                                background: #717A7F;
+                                border-radius: 10px;
+                            }
+                    </style>
+                    <!-- Banner -->
+                    <section class="s-banner">
+                        <div style="position:relative; width:100%; margin-top:40px;">
+                            <img src="assets/img/other/banner.jpg" style="width:100%; height:80vh;" />
+                            <div style="position: absolute; width: 100%; top: 0px; left: 0px; height: 80vh; color: white; background-image: linear-gradient(to right , rgba(30, 86, 128,1), rgba(0,0,0,0.3)); ">
+                                <div style="margin-top: 15vh; margin-left: 15px; cursor: pointer; font-size: 18px; font-weight: 600;">
+                                    Trusted Security Company
+                                </div>
+                                <div style="margin-top: 5vh; margin-left: 15px; cursor: pointer; font-size: 30px; font-weight: 800; ">
+                                    A Security System for <br />
+                                    Modern Lifestyle
+                                </div>
+                                <div style="margin-top: 3vh; margin-left: 15px; cursor: pointer; font-size: 17px; font-weight: 600; ">
+                                    We have reviewed Atleast 3 Security Features to bring you <br />
+                                    a secuity System you can trust.
+                                </div>
+                                <div style="margin-top: 6vh; margin-left: 15px; cursor:pointer; font-size: 18px; font-weight: 600; padding: 12px; border-radius:8px; text-align:center; width: 190px; background-color: #EB4343; ">
+                                    Talk to an expert
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- About Me -->
-                <section>
-                    <div class="abt">
-                        <div style="flex:1; font-weight:500; font-size:15px;">
-                            <div class="b">
-                                <div style="margin-top:15px;">
-                                    I am Thubakgale Mabalane Samuel , an ambitious Student studying for an
-                                    Undergraduate Degree in Electrical and Electronic Engineering with
-                                    Information Technology.
-                                </div>
-                                <div style="margin-top: 8px; color: #1E5680;">
-                                    Through my Studies I was able to become efficient in skills such as
-                                    coding , with extensive understanding of languages such as HTML , CSS ,
-                                    Javascript , jQUery , Java , C , C++ , C# .
-                                </div>
-                                <div style="margin-top:8px; margin-bottom:8px;">
-                                    I am also good in Arduino Programming , 3D CAD Design and PCB board design .
-                                    In terms of Social Style I am Analytical .
-                                </div>
+                    </section>
+                    <!-- About -->
+                    <section>
+                        <div class="abt s-about-me">
+                            <div style="flex:1; font-weight:500; font-size:15px;">
+                                <div class="b">
+                                    <div style="margin-top:15px;">
+                                        I am <span class="clr">Thubakgale Mabalane Samuel</span> , an <u>ambitious</u> Student studying for
+                                        a Degree in Electrical and Electronic Engineering with Information Technology at the
+                                        <span class="clr">University of Johannesburg</span>.
+                                    </div>
+                                    <div style="margin-top: 8px; color: #1E5680;">
+                                        Through my Studies I was able to become efficient in skills such as
+                                        coding , with extensive understanding of languages such as <span class="clr">HTML</span> , CSS ,
+                                        <span class="clr">Javascript</span> , jQUery , <span class="clr">Java</span> , C ,
+                                        <span class="clr">C++</span> , C# .
+                                    </div>
+                                    <div style="margin-top:8px; margin-bottom:8px;">
+                                        I am also good in <u>Arduino Programming</u> , 3D CAD Design and PCB board design .
+                                        In terms of Social Style I am <span class="clr">Analytical</span> .
+                                    </div>
 
-                                As such I am able to perform the following tasks with excellence
-                                <div style="margin-top: 8px; color: #1E5680;">
-                                    <span class="fa fa-minus" style="color: #EB4343"></span>  Web , Mobile and Desktop Design <br />
-                                    <span class="fa fa-minus" style="color: #EB4343"></span>  PCB board design, microcontroller programming <br />
-                                    <span class="fa fa-minus" style="color: #EB4343"></span>  Electronics Project Design and Simulations
+                                    As such I am able to perform the following tasks with excellence
+                                    <div style="margin-top: 8px; color: #1E5680;">
+                                        <span class="fa fa-minus" style="color: #EB4343"></span>  Web , Mobile and Desktop Design <br />
+                                        <span class="fa fa-minus" style="color: #EB4343"></span>  PCB board design, microcontroller programming <br />
+                                        <span class="fa fa-minus" style="color: #EB4343"></span>  Electronics Project Design and Simulations
+                                    </div>
                                 </div>
-                            </div> 
-                        </div>
-                        <div style="flex:1;">
-                            <div style="width:100%; min-height:50vh; padding-top:5px; padding-bottom:10px;"> 
-                                <div style="width:90%; position:relative; margin:auto; margin-top:15px;">
-                                    <img src="assets/img/other/about.jpg" style="width:100%;" />
-                                    <div style="position: absolute; height: 100%; top: 0px; left: 0px; background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(30, 86, 128,0.7)); width:100%;  color: #717A7F;">
-                                        <div style="display: flex; margin-left:30%; margin-top:5vh; font-size:30px; font-weight:900;">
-                                            <div style="width:30px; margin-left:5px; margin-right:5px; padding-top:12px;">
-                                                <hr style="border:none; border-bottom:solid white 5px;" />
+                            </div>
+                            <div style="flex:1;">
+                                <div style="width:100%; min-height:50vh; padding-top:5px; padding-bottom:10px;">
+                                    <div style="width:90%; position:relative; margin:auto; margin-top:15px;">
+                                        <img src="assets/img/other/me.jpg" style="width:100%;" />
+                                        <div style="position: absolute; height: 100%; top: 0px; left: 0px; background-image: linear-gradient(to right,rgba(30, 86, 128,0.8), rgba(30, 86, 128,0.5), rgba(30, 86, 128,0.3)); width: 100%; color: #717A7F; ">
+                                            <div style="display: flex; margin-left:10%; margin-top:9vh; font-size:30px; font-weight:900;">
+                                                <div style="width:30px; margin-left:5px; margin-right:5px; padding-top:12px;">
+                                                    <hr style="border:none; border-bottom:solid white 5px;" />
+                                                </div>
+                                                <div style="color: white;">
+                                                    About
+                                                </div>
                                             </div>
-                                            <div style="color: white;">
-                                                About 
+                                            <div style="margin-left:12%; color:white; font-size:40px; font-weight:900;">
+                                                WHO I AM ?
                                             </div>
-                                        </div>
-                                        <div style="text-align:center; color:white; font-size:40px; font-weight:900;">
-                                            WHO I AM ? 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="abt2 s-about-teuber-hs">
+                            <div style="flex:1; font-weight:500; font-size:15px;">
+                                <div class="b">
+                                    <div style="margin-top:15px;">
+                                        <span class="clr">Teuber-HS</span> is a <u> Home Security System </u> that is used to control
+                                        access for Entry to the Premises. It also serves as a <u> Survailance System </u> to Keep
+                                        track of who comes and goes in a form of Video and Image Capture.
+                                    </div>
+                                    <div style="margin-top: 8px; color: #1E5680;">
+                                        It shall operate both <u>online</u> and <u>offline</u> , as well as during Power
+                                        Outages . It is an affordable Security System that is easy to install
+                                        and easy to use . It will use a Camera Module , an RFID module and a
+                                        Human-Machine Interface.
+                                    </div>
+                                    <div style="margin-top:8px; margin-bottom:8px;">
+                                        Owners shall have the Capability to monitor their homes as well as have
+                                        Access on Electrical Locks during Power Outages. Teuber-HS will
+                                        provide dependable Security and Survailance
+                                    </div>
 
-                    <style>
-                        .abt {
-                            display: flex; 
-                        }
-                            .abt .b {
-                                margin: auto;
-                                width: 90%;
+                                    Main Features
+                                    <div style="margin-top: 8px; color: #1E5680; padding-bottom:8px;">
+                                        <span class="fa fa-minus clr"></span>  RFID Access Control , Access Logging  <br />
+                                        <span class="fa fa-minus clr"></span>  Survailance , Access Analysis <br />
+                                        <span class="fa fa-minus clr"></span>  Multi-User Access , Easy Usage <br />
+                                        <span class="fa fa-minus clr"></span>  Facial Recognition <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="flex:1;">
+                                <div style="width:100%; min-height:50vh; padding-top:5px; padding-bottom:10px;">
+                                    <div style="width:90%; position:relative; margin:auto; margin-top:15px;">
+                                        <img src="assets/img/other/about.jpg" style="width:100%; height:65vh;" />
+                                        <div style="position: absolute; height: 100%; top: 0px; left: 0px; background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(30, 86, 128,0.7)); width:100%;  color: #717A7F;">
+                                            <div style="display: flex; margin-left:40%; margin-top:5vh; font-size:30px; font-weight:900;">
+                                                <div style="width:30px; margin-left:5px; margin-right:5px; padding-top:12px;">
+                                                    <hr style="border:none; border-bottom:solid white 5px;" />
+                                                </div>
+                                                <div style="color: white;">
+                                                    About
+                                                </div>
+                                            </div>
+                                            <div style="margin-left:40%; color:white; font-size:40px; font-weight:900;">
+                                                Teuber-HS ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <style>
+                            .clr {
+                                color: #EB4343;
                             }
-                        /*Mobile*/
-                        @media screen and (max-width: 850px) {
+
                             .abt {
-                                flex-direction:column-reverse;
-                            }  
-                        }
-                        /*Web*/
-                        @media not screen and (max-width: 850px) {
-                            .abt {
-                                flex-direction:row-reverse;
-                            } 
-                        }
-                    </style>
-                </section>
-                <!-- Services -->
-                <!-- Procedure -->
-                <!-- Project -->
-                <!--- Project Background -->
-                <!-- Supervisors -->
-                <div style="min-height:60vh;"></div>
+                                display: flex;
+                            }
+
+                                .abt .b {
+                                    margin: auto;
+                                    width: 90%;
+                                }
+
+                            .abt2 {
+                                display: flex;
+                                background-color: rgba(228, 237, 244,0.8);
+                            }
+
+                                .abt2 .b {
+                                    margin: auto;
+                                    width: 90%;
+                                }
+                            /*Mobile*/
+                            @media screen and (max-width: 850px) {
+                                .abt {
+                                    flex-direction: column-reverse;
+                                }
+
+                                .abt2 {
+                                    flex-direction: column-reverse;
+                                }
+                            }
+                            /*Web*/
+                            @media not screen and (max-width: 850px) {
+                                .abt {
+                                    flex-direction: row-reverse;
+                                }
+
+                                .abt2 {
+                                    flex-direction: row;
+                                }
+                            }
+                        </style>
+                    </section>
+                    <!-- Services -->
+                    <section class="s-services">
+                        <div style="width:100%; padding-bottom:15px;">
+                            <div style="width: 300px; padding-top:8px; color: #1E5680; margin:auto; font-size: 30px; font-weight: 700;">
+                                Segments We Serve
+                            </div>
+                            <div style="width: 90%; color: #717A7F; font-weight:500; font-size:17px; margin:auto; text-align: center;">
+                                For the greater part of us, our system isn't only a residenial security , it can also be service
+                                a number of segments . <br />
+                                Providing secure living for families , business owners , corporations ,
+                                health services and hotels .
+                            </div>
+                            <div class="grid pxl" style="margin-top:20px;">
+                                <style>
+                                    #gs_1 .a {
+                                        background-color: #E9F1F6;
+                                        border-radius: 10px;
+                                        text-align: center;
+                                        padding-top: 30px;
+                                        cursor: pointer;
+                                    }
+
+                                        #gs_1 .a:hover {
+                                            background-color: white;
+                                            border: solid 1.5px #F59411;
+                                        }
+
+                                            #gs_1 .a:hover > .b {
+                                                color: #F59411;
+                                            }
+
+                                            #gs_1 .a:hover > .c {
+                                                color: #EB4343;
+                                            }
+
+                                    #gs_1 .b {
+                                        font-size: 100px;
+                                        color: #EB4343;
+                                    }
+
+                                    #gs_1 .c {
+                                        font-size: 18px;
+                                        color: #1E5680;
+                                        font-weight: 700;
+                                        padding-top: 10px;
+                                    }
+                                </style>
+                                <div id="gs_1">
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-residential b"></span>
+                                        <div class="c"> Residential </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-corporate b"></span>
+                                        <div class="c"> Corporate </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-industrial b"></span>
+                                        <div class="c"> Industrial </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-hospital b"></span>
+                                        <div class="c"> Hospital </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-shop b"></span>
+                                        <div class="c"> Retail </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-school b"></span>
+                                        <div class="c"> School </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-hotel b"></span>
+                                        <div class="c"> Hotel </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <span class="ic i-library b"></span>
+                                        <div class="c"> Library </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- System -->
+                    <section class="s-system">
+
+                        <div style="width: 100%; background-color: rgba(228, 237, 244,0.8); border-top: solid 1px #F47E10; padding-top: 5px; padding-bottom: 5px; ">
+                            <div style="width: 300px; padding-top:8px; color: #1E5680; margin:auto; font-size: 24px; font-weight: 700;">
+                                System and SubSystems
+                            </div>
+                            <div style="width: 90%; color: #717A7F; font-weight:500; font-size:17px; margin:auto; text-align: center;">
+                                Our system consists of a number of subsystems that work together to
+                                ensure the Safety of our Users.<br />
+                            </div>
+                            <div class="grid pxl" style="margin-top:20px;">
+                                <style>
+                                    #gs_2 .a {
+                                        border: solid #EB4343 1.5px;
+                                        background-color: white;
+                                        border-radius: 10px;
+                                        cursor: pointer;
+                                        padding-bottom: 8px;
+                                    }
+
+                                    #gs_2 .b {
+                                        border: solid blue;
+                                    }
+                                </style>
+                                <div id="gs_2">
+                                    <div class="gs_cell grid_c a">
+                                        <div style="text-align: center; color: #1E5680; font-weight:700;">
+                                            System
+                                        </div>
+                                        <img src="assets/img/other/system.svg" style="width:100%; height:90%;" />
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <div style="text-align: center; color: #1E5680; font-weight:700; padding-bottom:5px;">
+                                            Sub-System A : <span> User Management </span>
+                                        </div>
+                                        <style>
+                                            .lv1 {
+                                                margin-left: 5px;
+                                                margin-right: 5px;
+                                                color: #EB4343;
+                                                font-weight: 700;
+                                            }
+
+                                            .lv2 {
+                                                margin-left: 25px;
+                                                margin-right: 5px;
+                                                color: #1E5680;
+                                                font-weight: 700;
+                                            }
+
+                                            .lv2a {
+                                                margin-left: 25px;
+                                                margin-right: 11px;
+                                                color: #1E5680;
+                                                font-weight: 700;
+                                            }
+
+                                            .lv3 {
+                                                margin-left: 45px;
+                                                margin-right: 5px;
+                                                color: #EB4343;
+                                                font-weight: 700;
+                                            }
+                                        </style>
+                                        <div style=" font-size: 15px; color: black; font-weight:600;">
+                                            <span class="fa fa-minus lv1"></span>Interface and HMI <br />
+                                            <span class="lv2">1.</span>RFID <br />
+                                            <span class="fa fa-caret-right lv3"></span>Register RFID <br />
+                                            <span class="fa fa-caret-right lv3"></span>Verify RFID <br />
+                                            <span class="fa fa-caret-right lv3"></span>Update RFID Details <br />
+                                            <span class="fa fa-caret-right lv3"></span>Remove RFID <br />
+                                            <span class="lv2">2.</span>Wifi Connection <br />
+                                            <span class="fa fa-caret-right lv3"></span>Add Connection Details <br />
+                                            <span class="fa fa-caret-right lv3"></span>View Details <br />
+                                            <span class="fa fa-caret-right lv3"></span>Update Details <br />
+                                            <span class="fa fa-caret-right lv3"></span>Remove Details <br />
+                                            <span class="lv2">3.</span>Data Log <br />
+                                            <span class="fa fa-caret-right lv3"></span>Publish Log Data to Web API <br />
+                                            <span class="fa fa-caret-right lv3"></span>View Offline Log Information <br />
+                                            <span class="fa fa-caret-right lv3"></span>Publish Server for Devices <br />
+                                            <span class="fa fa-minus lv1"></span>Description <br />
+                                            <span class="fa fa-caret-right lv2"></span>It uses a 4x4 keyboard to register input <br />
+                                            <span class="fa fa-caret-right lv2"></span>It uses an Arduino to process the input <br />
+                                            <span class="fa fa-caret-right lv2"></span>It uses an LCD to display the output <br />
+                                        </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <div style="text-align: center; padding-bottom: 5px; color: #1E5680; font-weight: 700;">
+                                            Sub-System B : <span> RFID Module </span>
+                                        </div>
+                                        <div style=" font-size: 15px; color: black; font-weight:600;">
+                                            <span class="fa fa-minus lv1"></span>Interface <br />
+                                            <span class="fa fa-caret-right lv2"></span>It shall interact with Subsystem A via <br /><span class="lv2a"></span>serial Communication <br />
+                                            <span class="fa fa-minus lv1"></span>Description <br />
+                                            <span class="fa fa-caret-right lv2"></span>It uses RFID tagging system for Identification<br /><span class="lv2a"></span> and tracking purposes <br />
+                                            <span class="fa fa-caret-right lv2"></span>The system includes an Access Tag , a<br /><span class="lv2a"></span> Read/Write Device and a host App <br />
+                                            <span class="fa fa-caret-right lv2"></span>The host app being the Arduino in<br /><span class="lv2a"></span> this instance <br />
+                                            <span class="fa fa-caret-right lv2"></span>Which can collect , process and transmit<br /><span class="lv2a"></span> the data <br />
+                                            <span class="fa fa-caret-right lv2"></span>The Electromagnetic tag has a<br /><span class="lv2a"></span> unique Identification UID <br />
+                                        </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <div style="text-align: center; padding-bottom: 5px; color: #1E5680; font-weight: 700;">
+                                            Sub-System C : <span> Survailance Module </span>
+                                        </div>
+                                        <div style=" font-size: 15px; color: black; font-weight:600;">
+                                            <span class="fa fa-minus lv1"></span>Interface <br />
+                                            <span class="fa fa-caret-right lv2"></span>It shall interact with Subsystem A via<br /><span class="lv2a"></span>  serial Communication <br />
+                                            <span class="fa fa-minus lv1"></span>Description <br />
+                                            <span class="fa fa-caret-right lv2"></span>It uses the ESP32-CAM tp capture Videos<br /><span class="lv2a"></span>  and Images <br />
+                                            <span class="fa fa-caret-right lv2"></span>Which is a small size , low power<br /><span class="lv2a"></span>  consumption camera module
+                                            based on<br /><span class="lv2a"></span> ESP32 module <br />
+                                            <span class="fa fa-caret-right lv2"></span>It is widely used in IoT applications such<br /><span class="lv2a"></span>  as QR Identification <br />
+                                            <span class="fa fa-caret-right lv2"></span>wireless Video monitoring <br />
+                                            <span class="fa fa-caret-right lv2"></span>Facial Recognition <br />
+                                            <span class="fa fa-caret-right lv2"></span>Home Device Image Upload <br />
+                                        </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <div style="text-align: center; padding-bottom: 5px; color: #1E5680; font-weight: 700;">
+                                            Sub-System D : <span> Data Log Module </span>
+                                        </div>
+                                        <div style=" font-size: 15px; color: black; font-weight:600;">
+                                            <span class="fa fa-minus lv1"></span>Interface <br />
+                                            <span class="fa fa-caret-right lv2"></span>It shall interact with Subsystem A via<br /><span class="lv2a"></span>  serial Communication <br />
+                                            <span class="fa fa-minus lv1"></span>Description <br />
+                                            <span class="fa fa-caret-right lv2"></span>It uses the SD Card module to log and<br /><span class="lv2a"></span>  read Data <br />
+                                            <span class="fa fa-caret-right lv2"></span>Thus serving as offline storage when wifi<br /><span class="lv2a"></span>  is unavailable <br />
+                                            <span class="fa fa-caret-right lv2"></span>The SD Card module is compatible with<br /><span class="lv2a"></span>  microcontroller systems
+                                            such as Arduino <br />
+                                            <span class="fa fa-caret-right lv2"></span>Thus it is used specifically for projects<br /><span class="lv2a"></span>  that require data logging <br />
+                                        </div>
+                                    </div>
+                                    <div class="gs_cell grid_c a">
+                                        <div style="text-align: center; padding-bottom: 5px; color: #1E5680; font-weight: 700;">
+                                            Sub-System E : <span> Wifi Module </span>
+                                        </div>
+                                        <div style=" font-size: 15px; color: black; font-weight:600;">
+                                            <span class="fa fa-minus lv1"></span>Interface <br />
+                                            <span class="fa fa-caret-right lv2"></span>It shall interact with Subsystem A via<br /><span class="lv2a"></span>  serial Communication <br />
+                                            <span class="fa fa-minus lv1"></span>Description <br />
+                                            <span class="fa fa-caret-right lv2"></span>It uses the ESP8266 wifi module <br />
+                                            <span class="fa fa-caret-right lv2"></span>Which has a built in TCP/IP <br /><span class="lv2a"></span>networking software <br />
+                                            <span class="fa fa-caret-right lv2"></span>Thus it is capable of connecting via WIFI <br />
+                                            <span class="fa fa-caret-right lv2"></span>It serves as a communication tool by<br /><span class="lv2a"></span>  making HTTP requests to
+                                            Web Servers <br />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Project -->
+                    <section class="s-project">
+                        <div style="width: 100%; padding-bottom: 15px; background-color: white; ">
+                            <div style="width: 300px; padding-top:8px; color: #1E5680; margin:auto; font-size: 30px; font-weight: 700;">
+                                Project Proposal
+                            </div>
+                            <div style="width: 90%; color: #717A7F; font-weight:500; font-size:17px; margin:auto; text-align: center;">
+                                A detailed description of how the project came to be
+                            </div>
+                            <div style="width:90%;margin:auto; padding-top:10px;">
+                                <embed class="emb" src="docs/Sample.pdf#zoom=100" style="width: 100%; height: 85vh; border-radius: 10px; border: solid #1E5680 1.5px; " />
+                            </div>
+                        </div>
+                    </section> 
+                    <!--Contact Us-->
+                    <section class="s-contact">
+                        <div style="width: 100%; background-color: #E4EEF4; padding-top: 5px; padding-bottom: 5px; ">
+                            <div style="width: 300px; padding-top:8px; color: #1E5680; margin:auto; font-size: 24px; font-weight: 700;">
+                                Contact Details
+                            </div>
+                            <div style="width: 90%; color: #717A7F; font-weight:500; font-size:17px; margin:auto; text-align: center;">
+                                The following is how your can reach us
+                            </div>
+
+                            <div class="abt2">
+                                <div style="flex: 2; padding: 15px;  ">
+                                    <style>
+                                        .cn a {
+                                            color: #FF0000
+                                        }
+                                    </style>
+                                    <div class="cn" style="border-radius:15px; display:flex; font-weight:600; min-height:70vh; background-color:white; padding:30px; ">
+                                        <style>
+                                            /*Mobile*/
+                                            @media screen and (max-width: 850px) {
+                                                .cntc {
+                                                    flex: 1;
+                                                }
+                                            }
+                                        </style>
+                                        <div class="cntc"></div>
+                                        <div>
+                                            <div style="font-weight: 700; font-size: 18px; color: #1E5680">
+                                                <span style="color: #EB4343"> Mr</span> Thubakgale MS
+                                                <div style="width:40px; border:none; border-bottom:solid red 2px;"></div>
+                                            </div>
+                                            <div style="padding-top:10px;">
+                                                Surname : Thubakgale <br />
+                                                Names : <br />
+                                                <span class="fa fa-minus lv2"></span> Mabalane <br />
+                                                <span class="fa fa-minus lv2"></span> Samuel
+                                            </div>
+                                            <div style="padding-top:10px;">
+                                                Location : <br />
+                                                <span class="fa fa-minus lv2"></span>Johannesburg <br />
+                                                <span class="fa fa-minus lv2"></span>Auckland Park
+                                            </div>
+                                            <div style="padding-top:10px;">
+                                                Contact Details :
+                                                <br /><span class="fa fa-minus lv2"></span> <a href="tel:0795353597"> 0795 3535 97 </a>
+                                                <br /><span class="fa fa-minus lv2"></span> <a href="tel:0662531653"> 066 253 1653 </a>
+                                            </div>
+                                            <div style="padding-top:10px;">
+                                                Contact Details : <br />
+                                                <span class="fa fa-minus lv2"></span> <a href="mailto:smthubakgale@gmail.com"> smthubakgale@gmail.com </a>
+                                            </div>
+                                        </div>
+                                        <div style="flex:1;"></div>
+                                    </div>
+                                </div>
+                                <div style="flex:1; padding-right:10px;">
+                                    <div style="width:300px; margin:auto; height: 75vh; padding-top:15px; padding-bottom:15px; ">
+                                        <img src="assets/img/other/sam.jpg" style="width: 100%; height: 100%; border: solid #1E5680 2px; border-radius:15px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div style="min-height: 60vh; background-color: #E4EEF4;"></div>
+                </div>
             </div>
             <!--2. Menu -->
-            <div class="wb_menu" >
+            <div class="wb_menu">
                 <div style="padding-left: 5px; padding-top: 5px; background-color: #1E5680; ">
-                    <img src="assets/img/icons/menu_icon.png" style="width:160px; cursor:pointer;" />
+                    <img onclick="staticWeb('.s-banner')" src="assets/img/icons/menu_icon.png" style="width:160px; cursor:pointer;" />
                 </div>
                 <div style="width: 30px; background-color: #1E5680; border-bottom-right-radius:30px; ">
 
@@ -174,23 +562,33 @@
                                 cursor: pointer;
                             }
                         </style>
-                        <div class="mnu_itm">
+                        <div class="mnu_itm"  onclick="staticWeb('.s-banner')">
                             <span class="ttl"> Home </span>
                         </div>
                         <div style="flex:1;"></div>
                         <div class="mnu_itm">
-                            <span class="ttl"> About Me </span>
+                            <span class="ttl"> About </span>
+                            <div class="mnu_dr">
+                                <div class="a">
+                                    <div class="b"  onclick="staticWeb('.s-about-me')">
+                                        <span class="fa fa-minus"></span> Me
+                                    </div>
+                                    <div class="b" onclick="staticWeb('.s-about-teuber-hs')">
+                                        <span class="fa fa-minus"></span> Teuber HS
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div style="flex:1;"></div>
-                        <div class="mnu_itm">
+                        <div class="mnu_itm"  onclick="staticWeb('.s-services')">
                             <span class="ttl"> Services </span>
                         </div>
                         <div style="flex:1;"></div>
-                        <div class="mnu_itm">
-                            <span class="ttl"> Procedure </span>
+                        <div class="mnu_itm" onclick="staticWeb('.s-system')">
+                            <span class="ttl"> System </span>
                         </div>
                         <div style="flex:1;"></div>
-                        <div class="mnu_itm" style=" position: relative;">
+                        <div class="mnu_itm" style=" position: relative;" onclick="staticWeb('.s-project')">
                             <span class="ttl"> Project </span>
                             <style>
                                 .mnu_dr {
@@ -220,56 +618,17 @@
                                         margin-left: 5px;
                                         margin-right: 5px;
                                     }
-                            </style>
-                            <div class="mnu_dr">
-                                <div class="a">
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Project Background
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Problem Statement
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Requirement Extraction
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Feasibility Study
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Use Cases
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Solution Statement
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </style> 
+                        </div> 
                         <div style="flex:1;"></div>
-                        <div class="mnu_itm">
-                            <span class="ttl"> Supervisors </span>
-                            <div class="mnu_dr">
-                                <div class="a">
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Prof Johan Meyer
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Prof Ghanshyam Singh
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Mr Frederick Grobler
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="flex:1;"></div>
-                        <div class="mnu_itm">
+                        <div class="mnu_itm" onclick="staticWeb('.s-contact')">
                             <span class="ttl"> Contact </span>
                         </div>
-                        <div style="flex:2;"></div> 
+                        <div style="flex:2;"></div>
                     </div>
                 </div>
             </div>
-            <div class="mbl_menu"> 
+            <div class="mbl_menu">
                 <div style="flex: 1; background-color: #E5E9EE;">
                     <div style="width:130px; margin:auto;">
                         <img src="assets/img/icons/menu_icon.png" style="width:100%; " />
@@ -279,7 +638,7 @@
                     <span class="fa fa-bars"></span>
                 </div>
             </div>
-            <div class="mbl_menu2" stt="off" >
+            <div class="mbl_menu2" stt="off">
                 <div class="hide_ms" style="width:100%; height:100vh; display:flex; background-color:rgba(0,0,0,0.1)">
                     <div class="lmenu">
                         <div style="width: 100%; height: 100px; background-color: #1E5680; border-bottom-right-radius:20px; border-bottom-left-radius: 20px; ">
@@ -315,7 +674,7 @@
                                         margin-left: 15px;
                                     }
                             </style>
-                            <div class="mnu_it">
+                            <div class="mnu_it"  onclick="staticWeb('.s-banner')">
                                 <div>
                                     <span class="fa fa-home"></span>
                                 </div>
@@ -325,17 +684,27 @@
                                     <span class="fa fa-chevron-right"></span>
                                 </div>
                             </div>
-                            <div class="mnu_it">
-                                <div>
-                                    <span class="fa fa-user"></span>
+                            <div>
+                                <div class="mnu_it" stt="off" onclick="exp(this)">
+                                    <div>
+                                        <span class="fa fa-user"></span>
+                                    </div>
+                                    <div class="a"> About </div>
+                                    <div style="flex:1;"></div>
+                                    <div>
+                                        <span class="fa fa-chevron-right"></span>
+                                    </div>
                                 </div>
-                                <div class="a"> About Me </div>
-                                <div style="flex:1;"></div>
-                                <div>
-                                    <span class="fa fa-chevron-right"></span>
+                                <div class="exp_itm">
+                                    <div class="b" onclick="staticWeb('.s-about-me')">
+                                        <span class="fa fa-minus"></span> Me
+                                    </div>
+                                    <div class="b" onclick="staticWeb('.s-about-teuber-hs')">
+                                        <span class="fa fa-minus"></span> Teuber HS
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mnu_it">
+                            <div class="mnu_it" onclick="staticWeb('.s-services')">
                                 <div>
                                     <span class="fa fa-servicestack"></span>
                                 </div>
@@ -345,47 +714,27 @@
                                     <span class="fa fa-chevron-right"></span>
                                 </div>
                             </div>
-                            <div class="mnu_it">
+                            <div class="mnu_it" onclick="staticWeb('.s-system')">
                                 <div>
                                     <span class="fa fa-list"></span>
                                 </div>
-                                <div class="a"> Procedure </div>
+                                <div class="a"> System </div>
                                 <div style="flex:1;"></div>
                                 <div>
                                     <span class="fa fa-chevron-right"></span>
                                 </div>
                             </div>
                             <div>
-                                <div class="mnu_it" stt="off" onclick="exp(this)">
+                                <div class="mnu_it" stt="off" onclick="staticWeb('.s-project')">
                                     <div>
-                                        <span class="fa fa-project-diagram"></span>
+                                        <span class="ic i-notebook"></span>
                                     </div>
                                     <div class="a"> Project </div>
                                     <div style="flex:1;"></div>
                                     <div>
                                         <span class="fa fa-chevron-right"></span>
                                     </div>
-                                </div>
-                                <div class="exp_itm">
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Project Background
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Problem Statement
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Requirement Extraction
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Feasibility Study
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Use Cases
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Solution Statement
-                                    </div>
-                                </div>
+                                </div> 
                                 <style>
                                     .exp_itm {
                                         display: block;
@@ -421,31 +770,8 @@
                                         }
                                     }
                                 </script>
-                            </div>
-                            <div>
-                                <div class="mnu_it" stt="off" onclick="exp(this)">
-                                    <div>
-                                        <span class="ic i-coach"></span>
-                                    </div>
-                                    <div class="a"> Supervisor </div>
-                                    <div style="flex:1;"></div>
-                                    <div>
-                                        <span class="fa fa-chevron-right"></span>
-                                    </div>
-                                </div>
-                                <div class="exp_itm">
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Prof Johan Meyer
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Prof Ghanshyam Singh
-                                    </div>
-                                    <div class="b">
-                                        <span class="fa fa-minus"></span> Mr Frederick Grobler
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mnu_it">
+                            </div> 
+                            <div class="mnu_it" onclick="staticWeb('.s-contact')">
                                 <div>
                                     <span class="fa fa-phone"></span>
                                 </div>
@@ -455,6 +781,7 @@
                                     <span class="fa fa-chevron-right"></span>
                                 </div>
                             </div>
+                            <div style="min-height:30vh;"></div>
                         </div>
                     </div>
                     <div ignore="true" style="flex:1;"></div>
@@ -467,74 +794,176 @@
                     overflow-y: scroll;
                     background-color: white;
                 }
-                /* width */
-                .lmenu::-webkit-scrollbar {
-                    width: 10px;
-                }
+                    /* width */
+                    .lmenu::-webkit-scrollbar {
+                        width: 10px;
+                    }
 
-                /* Track */
-                .lmenu::-webkit-scrollbar-track {
-                    box-shadow: inset 0 0 5px grey;
-                }
+                    /* Track */
+                    .lmenu::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 5px grey;
+                    }
 
-                /* Handle */
-                .lmenu::-webkit-scrollbar-thumb {
-                    background: #717A7F;
-                    border-radius: 10px;
-                }
+                    /* Handle */
+                    .lmenu::-webkit-scrollbar-thumb {
+                        background: #717A7F;
+                        border-radius: 10px;
+                    }
             </style>
             <style>
-                
+
                 .wb_menu {
                     position: absolute;
                     min-height: 60px;
-                    border-bottom: solid #1E5680 2px; 
+                    border-bottom: solid #1E5680 2px;
                     top: 0px;
                     left: 0px;
                     width: 100%;
                     height: 30px;
-                    background-color:white;
+                    background-color: white;
                 }
+
                 .mbl_menu {
                     position: absolute;
-                    width:100%;
-                    top:0px;
-                    left:0px; 
+                    width: 100%;
+                    top: 0px;
+                    left: 0px;
+                    border-top: solid #1E5680 ;
+                    border-bottom: solid #1E5680 ;
                 }
+
                 .mbl_menu2 {
                     position: absolute;
                     width: 100%;
                     top: 0px;
                     left: 0px;
-                    height: 100vh; 
+                    height: 100vh;
                 }
                 /*Mobile*/
                 @media screen and (max-width: 850px) {
                     .wb_menu {
                         display: none;
-                    } 
+                    }
+
                     .mbl_menu {
                         display: flex;
                     }
                 }
                 /*Web*/
                 @media not screen and (max-width: 850px) {
-                    .wb_menu{
-                        display:flex;
-                    } 
-                    .mbl_menu{
-                        display:none;
-                    } 
+                    .wb_menu {
+                        display: flex;
+                    }
+
+                    .mbl_menu {
+                        display: none;
+                    }
                 }
             </style>
         </div>
 
     </main>
-
-
+     
+    <script> 
+        function staticWeb(tag)
+        {
+            $(".mbl_menu2").css("display", "none");
+            $(".mbody").scrollTop(0);
+            var a = $(tag).offset().top - 60; 
+            $(".mbody").scrollTop(a); 
+        }
+    </script>
     <script>
-        //
-        $(window).on("load", function () { mnu(); set_hide()});
+        $(window).on("load", function () { alignBody() })
+        $(window).resize(function () { alignBody() })
+        function alignBody()
+        {
+            // Body-Width
+            var wt = 850; 
+            var w1 = 1218; 
+            var w2 = $(window).outerWidth();
+
+            if (w2 < wt) {
+                // Zoom
+                var z = ((w2 / wt) * 100) + "%";
+                $("body").css("zoom", z);
+                // Except
+                z = ((wt / w2) * 100) + "%";
+                $(".mbl_menu2").css("zoom", z);
+                //
+            }
+            else if (w2 > w1) {
+                // Zoom
+                var z = ((w2 / w1) * 100) + "%";
+                $("body").css("zoom", z);
+                // Except
+                z = ((w1 / w2) * 100) + "%";
+                $(".mbl_menu2").css("zoom", z);
+                // 
+            }
+            else {
+                $("body").css("zoom", "100%");
+            }
+            // Body-Height
+            var h1 = 560;
+            var h2 = $(window).outerHeight(); 
+            // Tag-Height 
+            var ht = ["height", "min-height", "max-height", "margin-top", "margin-bottom"];
+
+            $.each(ht, (i, itm) =>
+            {
+                var hc = $("*").filter(function () { return ($(this).css(itm).indexOf("vh") != -1) });
+
+                $.each(hc, (k, item) =>
+                { 
+                   var h = (parseFloat($(item).css(itm).replace("vh", "")) / 100) * h1 + "px";
+                   $(item).css(itm, h); 
+                });
+            })
+            // 
+            if (w2 < wt) {
+                var zh = ((wt / w2) * h1);
+
+                $(".mbody").parent().css("max-height", zh + "px");
+                $(".mbody").css("height", (zh - 60) + "px");
+            }
+            else {
+                $(".mbody").parent().css("max-height", "100vh");
+                $(".mbody").css("height", (h2 - 55) + "px");
+            }
+            // Embed Zoom
+            $.each($(".emb"), (i, item) =>
+            { 
+                var k = $(item).attr("src");
+                if (k.indexOf("zoom=") != -1)
+                {
+                    var a = k.split("zoom=")[0] + "zoom=" + (90/100)*parseInt((w2 / w1) * 100); 
+                    $(item).attr("src", a);
+                    var b = $("<div>").html($(item).clone()); 
+                    $(item).parent().html(b.html());
+                }
+            }) 
+            //
+        }
+    </script>
+    <script>
+        $(window).on("load", function () { grd(); });
+        $(window).resize(function () { grd(); });
+        function grd() {
+            var w = $(window).outerWidth();
+            if (w > 550) { 
+                $("#gs_1").parent().attr("name", "250.00_220.00_10.00");
+                $("#gs_2").parent().attr("name", "350.00_220.00_15.00");
+            }
+            else { 
+                $("#gs_1").parent().attr("name", parseFloat((70 / 100) * w) + "_220.00_10.00");
+                $("#gs_2").parent().attr("name", parseFloat((90 / 100) * w) + "_220.00_10.00");
+            }
+            grid_fit();
+        } 
+    </script>
+    <script> 
+        $(window).on("load", function () { mnu(); set_hide() });
         $(window).resize(function () { mnu(); });
 
         function set_hide() {
@@ -561,7 +990,7 @@
                     var state = $(this).attr("state");
                     if (state == "off") {
                         $(this).parent().css("display", "none");
-                        $(this).parent().attr("stt", "off"); 
+                        $(this).parent().attr("stt", "off");
                     }
                     else {
                         $(this).attr("state", "off");
@@ -569,38 +998,30 @@
                 })
             });
         }
-        function mnu()
-        {
+        function mnu() {
             var w = $(".mbl_menu2").outerWidth();
             var st = $(".mbl_menu2").attr("stt");
-            
-            if (w <= 850)
-            {
-                if (st == "on")
-                {
+
+            if (w <= 850) {
+                if (st == "on") {
                     $(".mbl_menu2").css("display", "block");
                 }
-                if (st == "off")
-                {
+                if (st == "off") {
                     $(".mbl_menu2").css("display", "none");
                 }
             }
-            else
-            {
+            else {
                 $(".mbl_menu2").css("display", "none");
             }
         }
-        function tog()
-        {
+        function tog() {
             var st = $(".mbl_menu2").attr("stt");
 
-            if (st == "on")
-            {
+            if (st == "on") {
                 $(".mbl_menu2").css("display", "none");
                 $(".mbl_menu2").attr("stt", "off");
             }
-            if (st == "off")
-            {
+            if (st == "off") {
                 $(".mbl_menu2").css("display", "block");
                 $(".mbl_menu2").attr("stt", "on");
             }
