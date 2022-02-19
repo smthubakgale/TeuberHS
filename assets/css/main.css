@@ -1,4 +1,7 @@
 ﻿/*---------------------------------- 1. Page*/
+body {
+    display: none;
+}
 .mbody {
     height: 90vh;
     overflow-y: scroll;

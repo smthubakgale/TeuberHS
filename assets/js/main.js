@@ -1,4 +1,50 @@
-﻿
+﻿//------------------------------ 0. 
+$(document).ready(function () { respond(); });
+$(window).resize(function () { respond(); });
+
+function respond()
+{
+    $("body").css("display", "none");
+    var a = $("body").html(); 
+    if (Condition())
+    {
+        $("#rsp").attr("href", "assets/css/responsive.css");
+    }
+    else { 
+        $("#rsp").attr("href", "assets/css/web.css");
+    } 
+    $("body").html(a);
+    $("body").css("display","block");
+}
+function Condition()
+{
+    var width = $(window).innerWidth();
+    var height = $(window).innerHeight();
+    var mc = MobileCheck();
+     
+    if (mc == "Mobile") {
+
+        if (width < height) {
+            return (width < 751);
+        }
+        else {
+            return (height < 751);
+        }
+
+    }
+    else {
+        return (width < 751);
+    }
+}
+function MobileCheck() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return "Mobile";
+    }
+    else {
+        return "Web";
+    }
+}
+
 //------------------------------ 1.
 function staticWeb(tag) {
     $(".mbl_menu2").css("display", "none");
