@@ -5,8 +5,10 @@ $(window).resize(function () { respond(); });
 function respond()
 {
     $("body").css("display", "none");
-    var a = $("body").html(); 
-    if (Condition())
+    var a = $("body").html();
+    var w = $(window).innerWidth();
+    alert(w);
+    if (w < 850)
     {
         $("#rsp").attr("href", "assets/css/responsive.css");
     }
