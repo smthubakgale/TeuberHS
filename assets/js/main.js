@@ -76,13 +76,15 @@ function exp(tag) {
 $(window).on("load", function () { alignBody() })
 $(window).resize(function () { alignBody() })
 function alignBody()
-{ 
+{
+    var mc = MobileCheck();
     // Body-Width
     var wt = 850;
     var w1 = 1218;
     var w2 = $(window).outerWidth();
 
-    if (w2 < wt) {
+    if (w2 < wt || mc == "Mobile")
+    {
         // Zoom
         var z = ((w2 / wt) * 100) + "%";
         $("body").css("zoom", z);
@@ -91,7 +93,8 @@ function alignBody()
         $(".mbl_menu2").css("zoom", z);
         //
     }
-    else if (w2 > w1) {
+    else if (w2 > w1)
+    {
         // Zoom
         var z = ((w2 / w1) * 100) + "%";
         $("body").css("zoom", z);
@@ -118,7 +121,7 @@ function alignBody()
         });
     })
     // 
-    if (w2 < wt) {
+    if (w2 < wt || mc == "Mobile") {
         var zh = ((wt / w2) * h1);
 
         $(".mbody").parent().css("max-height", zh + "px");
