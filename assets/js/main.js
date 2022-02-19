@@ -121,7 +121,7 @@ function alignBody()
         });
     })
     // 
-    if (w2 < wt || mc == "Mobile") {
+    if (w2 < wt ) {
         var zh = ((wt / w2) * h1);
 
         $(".mbody").parent().css("max-height", zh + "px");
