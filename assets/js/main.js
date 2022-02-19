@@ -7,14 +7,18 @@ function respond()
     $("body").css("display", "none");
     var a = $("body").html();
 
-    var mc = MobileCheck();
-    alert(mc);
+    var mc = MobileCheck(); 
     if (mc == "Mobile")
     {
         $("#rsp").attr("href", "assets/css/responsive.css");
     }
-    else { 
-        $("#rsp").attr("href", "assets/css/web.css");
+    else {
+        var w = $(window).innerWidth();
+        if (w < 850) {
+            $("#rsp").attr("href", "assets/css/responsive.css");
+        }
+        else {
+            $("#rsp").attr("href", "assets/css/web.css");}
     } 
     $("body").html(a);
     $("body").css("display","block");
@@ -72,8 +76,7 @@ function exp(tag) {
 $(window).on("load", function () { alignBody() })
 $(window).resize(function () { alignBody() })
 function alignBody()
-{
-    return;
+{ 
     // Body-Width
     var wt = 850;
     var w1 = 1218;
