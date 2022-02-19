@@ -1,0 +1,18 @@
+﻿.wb_menu {
+    display: none;
+}
+
+.mbl_menu {
+    display: flex;
+}
+
+.cntc {
+    flex: 1;
+}
+.abt {
+    flex-direction: column-reverse;
+}
+
+.abt2 {
+    flex-direction: column-reverse;
+}

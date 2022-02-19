@@ -150,37 +150,11 @@
     left: 0px;
     height: 100vh;
     display: none;
-}
-/*Mobile*/
-@media screen and (max-width: 850px) {
-    .wb_menu {
-        display: none;
-    }
-
-    .mbl_menu {
-        display: flex;
-    }
-}
-/*Web*/
-@media not screen and (max-width: 850px) {
-    .wb_menu {
-        display: flex;
-    }
-
-    .mbl_menu {
-        display: none;
-    }
-}
+} 
 /*------------------------------------- Contact*/ 
 .cn a {
     color: #FF0000
-}
-/*Mobile*/
-@media screen and (max-width: 850px) {
-    .cntc {
-        flex: 1;
-    }
-}
+} 
 /*------------------------------------- System*/
 #gs_2 .a {
     border: solid #EB4343 1.5px;
@@ -275,24 +249,4 @@
     .abt2 .b {
         margin: auto;
         width: 90%;
-    }
-/*Mobile*/
-@media screen and (max-width: 850px) {
-    .abt {
-        flex-direction: column-reverse;
-    }
-
-    .abt2 {
-        flex-direction: column-reverse;
-    }
-}
-/*Web*/
-@media not screen and (max-width: 850px) {
-    .abt {
-        flex-direction: row-reverse;
-    }
-
-    .abt2 {
-        flex-direction: row;
-    }
-}
+    } 
