@@ -8,44 +8,25 @@
     <!-- Default CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <!-- Imported CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/icons/i_custom.css">
     <link rel="stylesheet" href="assets/icons/i_font-awesome.css">
     <link rel="stylesheet" href="assets/fonts/f_custom.css">
     <link rel="stylesheet" href="assets/css/slidegrid.css">
     <!-- Layout Script -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/slidegrid.js"></script> 
+    <script src="assets/js/slidegrid.js"></script>
+    <script src="assets/js/main.js"></script>
     <!--::-->
 </head>
 <body>
 
     <main>
-
+         
         <div style="position:relative; max-width:100%; max-height:100vh; padding-top:58px; overflow:hidden;">
             <!--1. Page-->
             <div class="mbody">
-                <div style="margin-top: -58px">
-                    <style>
-                        .mbody {
-                            height: 90vh;
-                            overflow-y: scroll; 
-                        }
-                            /* width */
-                            .mbody::-webkit-scrollbar {
-                                width: 15px;
-                            }
-
-                            /* Track */
-                            .mbody::-webkit-scrollbar-track {
-                                box-shadow: inset 0 0 5px grey;
-                            }
-
-                            /* Handle */
-                            .mbody::-webkit-scrollbar-thumb {
-                                background: #717A7F;
-                                border-radius: 10px;
-                            }
-                    </style>
+                <div style="margin-top: -58px"> 
                     <!-- Banner -->
                     <section class="s-banner">
                         <div style="position:relative; width:100%; margin-top:40px;">
@@ -62,7 +43,7 @@
                                     We have reviewed Atleast 3 Security Features to bring you <br />
                                     a secuity System you can trust.
                                 </div>
-                                <div style="margin-top: 6vh; margin-left: 15px; cursor:pointer; font-size: 18px; font-weight: 600; padding: 12px; border-radius:8px; text-align:center; width: 190px; background-color: #EB4343; ">
+                                <div  onclick="staticWeb('.s-contact')" style="margin-top: 6vh; margin-left: 15px; cursor:pointer; font-size: 18px; font-weight: 600; padding: 12px; border-radius:8px; text-align:center; width: 190px; background-color: #EB4343; ">
                                     Talk to an expert
                                 </div>
                             </div>
@@ -167,52 +148,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <style>
-                            .clr {
-                                color: #EB4343;
-                            }
-
-                            .abt {
-                                display: flex;
-                            }
-
-                                .abt .b {
-                                    margin: auto;
-                                    width: 90%;
-                                }
-
-                            .abt2 {
-                                display: flex;
-                                background-color: rgba(228, 237, 244,0.8);
-                            }
-
-                                .abt2 .b {
-                                    margin: auto;
-                                    width: 90%;
-                                }
-                            /*Mobile*/
-                            @media screen and (max-width: 850px) {
-                                .abt {
-                                    flex-direction: column-reverse;
-                                }
-
-                                .abt2 {
-                                    flex-direction: column-reverse;
-                                }
-                            }
-                            /*Web*/
-                            @media not screen and (max-width: 850px) {
-                                .abt {
-                                    flex-direction: row-reverse;
-                                }
-
-                                .abt2 {
-                                    flex-direction: row;
-                                }
-                            }
-                        </style>
+                        </div> 
                     </section>
                     <!-- Services -->
                     <section class="s-services">
@@ -226,41 +162,7 @@
                                 Providing secure living for families , business owners , corporations ,
                                 health services and hotels .
                             </div>
-                            <div class="grid pxl" style="margin-top:20px;">
-                                <style>
-                                    #gs_1 .a {
-                                        background-color: #E9F1F6;
-                                        border-radius: 10px;
-                                        text-align: center;
-                                        padding-top: 30px;
-                                        cursor: pointer;
-                                    }
-
-                                        #gs_1 .a:hover {
-                                            background-color: white;
-                                            border: solid 1.5px #F59411;
-                                        }
-
-                                            #gs_1 .a:hover > .b {
-                                                color: #F59411;
-                                            }
-
-                                            #gs_1 .a:hover > .c {
-                                                color: #EB4343;
-                                            }
-
-                                    #gs_1 .b {
-                                        font-size: 100px;
-                                        color: #EB4343;
-                                    }
-
-                                    #gs_1 .c {
-                                        font-size: 18px;
-                                        color: #1E5680;
-                                        font-weight: 700;
-                                        padding-top: 10px;
-                                    }
-                                </style>
+                            <div class="grid pxl" style="margin-top:20px;"> 
                                 <div id="gs_1">
                                     <div class="gs_cell grid_c a">
                                         <span class="ic i-residential b"></span>
@@ -309,20 +211,7 @@
                                 Our system consists of a number of subsystems that work together to
                                 ensure the Safety of our Users.<br />
                             </div>
-                            <div class="grid pxl" style="margin-top:20px;">
-                                <style>
-                                    #gs_2 .a {
-                                        border: solid #EB4343 1.5px;
-                                        background-color: white;
-                                        border-radius: 10px;
-                                        cursor: pointer;
-                                        padding-bottom: 8px;
-                                    }
-
-                                    #gs_2 .b {
-                                        border: solid blue;
-                                    }
-                                </style>
+                            <div class="grid pxl" style="margin-top:20px;"> 
                                 <div id="gs_2">
                                     <div class="gs_cell grid_c a">
                                         <div style="text-align: center; color: #1E5680; font-weight:700;">
@@ -333,36 +222,7 @@
                                     <div class="gs_cell grid_c a">
                                         <div style="text-align: center; color: #1E5680; font-weight:700; padding-bottom:5px;">
                                             Sub-System A : <span> User Management </span>
-                                        </div>
-                                        <style>
-                                            .lv1 {
-                                                margin-left: 5px;
-                                                margin-right: 5px;
-                                                color: #EB4343;
-                                                font-weight: 700;
-                                            }
-
-                                            .lv2 {
-                                                margin-left: 25px;
-                                                margin-right: 5px;
-                                                color: #1E5680;
-                                                font-weight: 700;
-                                            }
-
-                                            .lv2a {
-                                                margin-left: 25px;
-                                                margin-right: 11px;
-                                                color: #1E5680;
-                                                font-weight: 700;
-                                            }
-
-                                            .lv3 {
-                                                margin-left: 45px;
-                                                margin-right: 5px;
-                                                color: #EB4343;
-                                                font-weight: 700;
-                                            }
-                                        </style>
+                                        </div> 
                                         <div style=" font-size: 15px; color: black; font-weight:600;">
                                             <span class="fa fa-minus lv1"></span>Interface and HMI <br />
                                             <span class="lv2">1.</span>RFID <br />
@@ -472,25 +332,12 @@
                                 Contact Details
                             </div>
                             <div style="width: 90%; color: #717A7F; font-weight:500; font-size:17px; margin:auto; text-align: center;">
-                                The following is how your can reach us
+                                The following is how your can reach me
                             </div>
 
                             <div class="abt2">
-                                <div style="flex: 2; padding: 15px;  ">
-                                    <style>
-                                        .cn a {
-                                            color: #FF0000
-                                        }
-                                    </style>
-                                    <div class="cn" style="border-radius:15px; display:flex; font-weight:600; min-height:70vh; background-color:white; padding:30px; ">
-                                        <style>
-                                            /*Mobile*/
-                                            @media screen and (max-width: 850px) {
-                                                .cntc {
-                                                    flex: 1;
-                                                }
-                                            }
-                                        </style>
+                                <div style="flex: 2; padding: 15px;  "> 
+                                    <div class="cn" style="border-radius:15px; display:flex; font-weight:600; min-height:70vh; background-color:white; padding:30px; "> 
                                         <div class="cntc"></div>
                                         <div>
                                             <div style="font-weight: 700; font-size: 18px; color: #1E5680">
@@ -549,19 +396,7 @@
                 </div>
                 <div style="flex: 1; background-color: white;">
                     <div style="height: 10px; width: 100%; background-color: #1E5680;"></div>
-                    <div style="display:flex;">
-                        <style>
-                            .mnu_itm {
-                                width: 80px;
-                                padding-top: 8px;
-                                font-family: Arial;
-                                font-size: 16px;
-                                font-weight: 700;
-                                color: #1E5680;
-                                text-align: center;
-                                cursor: pointer;
-                            }
-                        </style>
+                    <div style="display:flex;"> 
                         <div class="mnu_itm"  onclick="staticWeb('.s-banner')">
                             <span class="ttl"> Home </span>
                         </div>
@@ -589,36 +424,7 @@
                         </div>
                         <div style="flex:1;"></div>
                         <div class="mnu_itm" style=" position: relative;" onclick="staticWeb('.s-project')">
-                            <span class="ttl"> Project </span>
-                            <style>
-                                .mnu_dr {
-                                    width: 160px;
-                                    position: absolute;
-                                    padding-top: 15px;
-                                    display: none;
-                                }
-
-                                    .mnu_dr .a {
-                                        width: 160px;
-                                        background-color: #F6F6F6;
-                                        border-top: solid #EB4343 3px;
-                                        color: #4A4E4B;
-                                        padding: 3px;
-                                        font-size: 11px;
-                                    }
-
-                                    .mnu_dr .b {
-                                        border-bottom: solid #DDDDDD 1px;
-                                        padding-top: 8px;
-                                        padding-bottom: 8px;
-                                        text-align: left;
-                                    }
-
-                                    .mnu_dr .fa {
-                                        margin-left: 5px;
-                                        margin-right: 5px;
-                                    }
-                            </style> 
+                            <span class="ttl"> Project </span> 
                         </div> 
                         <div style="flex:1;"></div>
                         <div class="mnu_itm" onclick="staticWeb('.s-contact')">
@@ -646,34 +452,7 @@
                                 <img src="assets/img/icons/menu_icon.png" style="width:100%;" />
                             </div>
                         </div>
-                        <div style="width:100%; ">
-                            <style>
-
-                                .hide_ms {
-                                    display: none;
-                                }
-
-                                .mnu_it {
-                                    display: flex;
-                                    padding-left: 5%;
-                                    padding-right: 5%;
-                                    color: #1E5680;
-                                    padding-top: 5px;
-                                    padding-bottom: 5px;
-                                    cursor: pointer;
-                                }
-
-                                    .mnu_it:hover {
-                                        background-color: rgba(0,0,0,0.1);
-                                    }
-
-                                    .mnu_it .a {
-                                        font-size: 17px;
-                                        font-weight: 700;
-                                        font-family: Comic Sans MS;
-                                        margin-left: 15px;
-                                    }
-                            </style>
+                        <div style="width:100%; "> 
                             <div class="mnu_it"  onclick="staticWeb('.s-banner')">
                                 <div>
                                     <span class="fa fa-home"></span>
@@ -734,42 +513,7 @@
                                     <div>
                                         <span class="fa fa-chevron-right"></span>
                                     </div>
-                                </div> 
-                                <style>
-                                    .exp_itm {
-                                        display: block;
-                                        margin-left: 15%;
-                                        font-size: 14px;
-                                        font-weight: 700;
-                                        font-family: Comic Sans MS;
-                                        color: #EB4343;
-                                        display: none;
-                                    }
-
-                                        .exp_itm .b {
-                                            padding-top: 3px;
-                                            padding-bottom: 3px;
-                                            cursor: pointer;
-                                        }
-
-                                            .exp_itm .b:hover {
-                                                background-color: rgba(0,0,0,0.1)
-                                            }
-                                </style>
-                                <script>
-                                    function exp(tag) {
-                                        var st = $(tag).attr("stt");
-
-                                        if (st == "on") {
-                                            $(tag).attr("stt", "off");
-                                            $(tag).parent().find(".exp_itm").css("display", "none");
-                                        }
-                                        if (st == "off") {
-                                            $(tag).attr("stt", "on");
-                                            $(tag).parent().find(".exp_itm").css("display", "block");
-                                        }
-                                    }
-                                </script>
+                                </div>   
                             </div> 
                             <div class="mnu_it" onclick="staticWeb('.s-contact')">
                                 <div>
@@ -786,263 +530,10 @@
                     </div>
                     <div ignore="true" style="flex:1;"></div>
                 </div>
-            </div>
-            <style>
-                .lmenu {
-                    width: 300px;
-                    height: 100vh;
-                    overflow-y: scroll;
-                    background-color: white;
-                }
-                    /* width */
-                    .lmenu::-webkit-scrollbar {
-                        width: 10px;
-                    }
-
-                    /* Track */
-                    .lmenu::-webkit-scrollbar-track {
-                        box-shadow: inset 0 0 5px grey;
-                    }
-
-                    /* Handle */
-                    .lmenu::-webkit-scrollbar-thumb {
-                        background: #717A7F;
-                        border-radius: 10px;
-                    }
-            </style>
-            <style>
-
-                .wb_menu {
-                    position: absolute;
-                    min-height: 60px;
-                    border-bottom: solid #1E5680 2px;
-                    top: 0px;
-                    left: 0px;
-                    width: 100%;
-                    height: 30px;
-                    background-color: white;
-                }
-
-                .mbl_menu {
-                    position: absolute;
-                    width: 100%;
-                    top: 0px;
-                    left: 0px;
-                    border-top: solid #1E5680 ;
-                    border-bottom: solid #1E5680 ;
-                }
-
-                .mbl_menu2 {
-                    position: absolute;
-                    width: 100%;
-                    top: 0px;
-                    left: 0px;
-                    height: 100vh;
-                    display:none;
-                }
-                /*Mobile*/
-                @media screen and (max-width: 850px) {
-                    .wb_menu {
-                        display: none;
-                    }
-
-                    .mbl_menu {
-                        display: flex;
-                    }
-                }
-                /*Web*/
-                @media not screen and (max-width: 850px) {
-                    .wb_menu {
-                        display: flex;
-                    }
-
-                    .mbl_menu {
-                        display: none;
-                    }
-                }
-            </style>
+            </div> 
         </div>
 
     </main>
-     
-    <script> 
-        function staticWeb(tag)
-        {
-            $(".mbl_menu2").css("display", "none");
-            $(".mbody").scrollTop(0);
-            var a = $(tag).offset().top - 60; 
-            $(".mbody").scrollTop(a); 
-        }
-    </script>
-    <script>
-        $(window).on("load", function () { alignBody() })
-        $(window).resize(function () { alignBody() })
-        function alignBody()
-        {
-            // Body-Width
-            var wt = 850; 
-            var w1 = 1218; 
-            var w2 = $(window).outerWidth();
-
-            if (w2 < wt) {
-                // Zoom
-                var z = ((w2 / wt) * 100) + "%";
-                $("body").css("zoom", z);
-                // Except
-                z = ((wt / w2) * 100) + "%";
-                $(".mbl_menu2").css("zoom", z);
-                //
-            }
-            else if (w2 > w1) {
-                // Zoom
-                var z = ((w2 / w1) * 100) + "%";
-                $("body").css("zoom", z);
-                // Except
-                z = ((w1 / w2) * 100) + "%";
-                $(".mbl_menu2").css("zoom", z);
-                // 
-            }
-            else {
-                $("body").css("zoom", "100%");
-            }
-            // Body-Height
-            var h1 = 560;
-            var h2 = $(window).outerHeight(); 
-            // Tag-Height 
-            var ht = ["height", "min-height", "max-height", "margin-top", "margin-bottom"];
-
-            $.each(ht, (i, itm) =>
-            {
-                var hc = $("*").filter(function () { return ($(this).css(itm).indexOf("vh") != -1) });
-
-                $.each(hc, (k, item) =>
-                { 
-                   var h = (parseFloat($(item).css(itm).replace("vh", "")) / 100) * h1 + "px";
-                   $(item).css(itm, h); 
-                });
-            })
-            // 
-            if (w2 < wt) {
-                var zh = ((wt / w2) * h1);
-
-                $(".mbody").parent().css("max-height", zh + "px");
-                $(".mbody").css("height", (zh - 60) + "px");
-            }
-            else {
-                $(".mbody").parent().css("max-height", "100vh");
-                $(".mbody").css("height", (h2 - 55) + "px");
-            }
-            // Embed Zoom
-            $.each($(".emb"), (i, item) =>
-            { 
-                var k = $(item).attr("src");
-                if (k.indexOf("zoom=") != -1)
-                {
-                    var a = k.split("zoom=")[0] + "zoom=" + (90/100)*parseInt((w2 / w1) * 100); 
-                    $(item).attr("src", a);
-                    var b = $("<div>").html($(item).clone()); 
-                    $(item).parent().html(b.html());
-                }
-            }) 
-            //
-        }
-    </script>
-    <script>
-        $(window).on("load", function () { grd(); });
-        $(window).resize(function () { grd(); });
-        function grd() {
-            var w = $(window).outerWidth();
-            if (w > 550) { 
-                $("#gs_1").parent().attr("name", "250.00_220.00_10.00");
-                $("#gs_2").parent().attr("name", "350.00_220.00_15.00");
-            }
-            else { 
-                $("#gs_1").parent().attr("name", parseFloat((70 / 100) * w) + "_220.00_10.00");
-                $("#gs_2").parent().attr("name", parseFloat((90 / 100) * w) + "_220.00_10.00");
-            }
-            grid_fit();
-        } 
-    </script>
-    <script> 
-        $(window).on("load", function () { mnu(); set_hide() });
-        $(window).resize(function () { mnu(); });
-
-        function set_hide() {
-            var a = $(".hide_ms");
-            $.each(a, (k, tag) => {
-                $(tag).attr("state", "off");
-                var childs = $(tag).children();
-                // Is Overlay Area
-                $.each(childs, (index, item) => {
-                    var p = $(item).attr("ignore") + "";
-
-                    if (p == "true") {
-                        $(item).click(function () {
-                            $(tag).attr("state", "off");
-                        });
-                    }
-                    else {
-                        $(item).click(function () {
-                            $(tag).attr("state", "on");
-                        });
-                    }
-                });
-                $(tag).click(function () {
-                    var state = $(this).attr("state");
-                    if (state == "off") {
-                        $(this).parent().css("display", "none");
-                        $(this).parent().attr("stt", "off");
-                    }
-                    else {
-                        $(this).attr("state", "off");
-                    }
-                })
-            });
-        }
-        function mnu() {
-            var w = $(".mbl_menu2").outerWidth();
-            var st = $(".mbl_menu2").attr("stt");
-
-            if (w <= 850) {
-                if (st == "on") {
-                    $(".mbl_menu2").css("display", "block");
-                }
-                if (st == "off") {
-                    $(".mbl_menu2").css("display", "none");
-                }
-            }
-            else {
-                $(".mbl_menu2").css("display", "none");
-            }
-        }
-        function tog() {
-            var st = $(".mbl_menu2").attr("stt");
-
-            if (st == "on") {
-                $(".mbl_menu2").css("display", "none");
-                $(".mbl_menu2").attr("stt", "off");
-            }
-            if (st == "off") {
-                $(".mbl_menu2").css("display", "block");
-                $(".mbl_menu2").attr("stt", "on");
-            }
-        }
-        // Menu Item
-        $(".mnu_itm").hover(function () {
-            $(this).find(".mnu_dr").css("display", "block");
-            $(this).find(".ttl").css("color", "#EB4343");
-        }).mouseleave(function () {
-            $(this).find(".mnu_dr").css("display", "none");
-            $(this).find(".ttl").css("color", "#1E5680");
-        });
-        // Drop Down List
-        $(".mnu_dr .b").hover(function () {
-            $(this).css("color", "white");
-            $(this).css("background-color", "#EB4343");
-        }).mouseleave(function () {
-            $(this).css("color", "#4A4E4B");
-            $(this).css("background-color", "#F6F6F6");
-        });
-    </script>
+         
 </body>
 </html>
