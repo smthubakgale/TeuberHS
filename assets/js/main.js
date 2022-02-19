@@ -25,15 +25,15 @@ function Condition()
     if (mc == "Mobile") {
 
         if (width < height) {
-            return (width < 751);
+            return (width < 850);
         }
         else {
-            return (height < 751);
+            return (height < 850);
         }
 
     }
     else {
-        return (width < 751);
+        return (width < 850);
     }
 }
 function MobileCheck() {
