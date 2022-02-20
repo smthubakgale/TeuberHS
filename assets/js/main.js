@@ -84,18 +84,7 @@ function alignBody()
         $(".mbl_menu").css("zoom", z); 
         $(".mbl_menu2").css("zoom", z);
         //
-    }
-    else if (w2 > w1) {
-        // Zoom
-        var z = ((w2 / w1) * 100) + "%";
-        $("body").css("zoom", z);
-        // Except
-        z = ((w1 / w2) * 100) + "%";
-
-        $(".mbl_menu").css("zoom", z);
-        $(".mbl_menu2").css("zoom", z);
-        // 
-    }
+    } 
     else {
         $("body").css("zoom", "100%");
     }
