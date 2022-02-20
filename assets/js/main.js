@@ -115,18 +115,25 @@ function alignBody()
 
         $(".mbody").parent().css("max-height", "100vh");
         $(".mbody").css("height", (h2 - 55) + "px");
-    }
-    else {
-    if (w2 <= wt) {
-        var zh = ((wt / w2) * h1);
 
-        $(".mbody").parent().css("max-height", zh + "px");
-        $(".mbody").css("height", (zh - 60) + "px");
+        $(".dwn").css("display", "block");
+        $(".emb").css("display", "none");
     }
     else {
-        $(".mbody").parent().css("max-height", "100vh");
-        $(".mbody").css("height", (h2 - 55) + "px");
-    }
+
+        $(".dwn").css("display", "none");
+        $(".emb").css("display", "block");
+
+        if (w2 <= wt) {
+            var zh = ((wt / w2) * h1);
+
+            $(".mbody").parent().css("max-height", zh + "px");
+            $(".mbody").css("height", (zh - 60) + "px");
+        }
+        else {
+            $(".mbody").parent().css("max-height", "100vh");
+            $(".mbody").css("height", (h2 - 55) + "px");
+        }
     }
     // Embed Zoom
     $.each($(".emb"), (i, item) => {
@@ -140,6 +147,12 @@ function alignBody()
     })
     //
 }
+
+function downloadAsset(tag)
+{ 
+    window.location.href = $(tag).attr("pth");
+}
+
 $(window).on("load", function () { grd(); });
 $(window).resize(function () { grd(); });
 function grd() {
