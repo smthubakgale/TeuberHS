@@ -1,17 +1,27 @@
 ﻿//------------------------------ 0. 
-$(document).ready(function () { respond(); });
+$(window).on("load",function () { respond(); });
 $(window).resize(function () { respond(); });
 
 function respond()
 {
+    var k = $("head").find("#rsp");
+    if (k.length != 0) {
+        k.remove();
+    }
+
+    var a = $("<link/>");
+    a.prop("id", "rsp");
+    a.attr("rel" , "stylesheet")
+
     $("body").css("display", "none"); 
     if (Condition())
     {
-        $("#rsp").attr("href", "assets/css/responsive.css");
+        a.attr("href", "assets/css/responsive.css");
     }
     else { 
-        $("#rsp").attr("href", "assets/css/web.css");
-    }  
+        a.attr("href", "assets/css/web.css");
+    }
+    $("head").append(a);
     $("body").css("display","block");
 }
 function Condition()
