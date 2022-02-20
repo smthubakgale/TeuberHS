@@ -111,15 +111,22 @@ function alignBody()
         });
     })
     // 
-    if (w2 <= wt) {
-        var zh = ((wt / w2) * h1);
+    if (Condition()) {
 
-        $(".mbody").parent().css("max-height", zh + "px");
-        $(".mbody").css("height", (zh - 60) + "px");
-    }
-    else {
         $(".mbody").parent().css("max-height", "100vh");
         $(".mbody").css("height", (h2 - 55) + "px");
+    }
+    else {
+        if (w2 <= wt) {
+            var zh = ((wt / w2) * h1);
+
+            $(".mbody").parent().css("max-height", zh + "px");
+            $(".mbody").css("height", (zh - 60) + "px");
+        }
+        else {
+            $(".mbody").parent().css("max-height", "100vh");
+            $(".mbody").css("height", (h2 - 55) + "px");
+        }
     }
     // Embed Zoom
     $.each($(".emb"), (i, item) => {
