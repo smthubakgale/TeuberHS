@@ -25,15 +25,15 @@ function Condition()
     if (mc == "Mobile") {
 
         if (width < height) {
-            return (width < 990);
+            return (width <= 980);
         }
         else {
-            return (height < 990);
+            return (height <= 980);
         }
 
     }
     else {
-        return (width < 990);
+        return (width <= 980);
     }
 }
 function MobileCheck() {
@@ -71,11 +71,11 @@ $(window).resize(function () { alignBody() })
 function alignBody()
 {
     // Body-Width
-    var wt = 990;
+    var wt = 980;
     var w1 = 1218;
     var w2 = $(window).outerWidth();
 
-    if (w2 < wt) {
+    if (w2 <= wt) {
         // Zoom
         var z = ((w2 / wt) * 100) + "%";
         $("body").css("zoom", z);
@@ -111,7 +111,7 @@ function alignBody()
         });
     })
     // 
-    if (w2 < wt) {
+    if (w2 <= wt) {
         var zh = ((wt / w2) * h1);
 
         $(".mbody").parent().css("max-height", zh + "px");
@@ -187,7 +187,7 @@ function mnu() {
     var w = $(".mbl_menu2").outerWidth();
     var st = $(".mbl_menu2").attr("stt");
 
-    if (w <= 990) {
+    if (w <= 850) {
         if (st == "on") {
             $(".mbl_menu2").css("display", "block");
         }
