@@ -120,12 +120,12 @@ function alignBody()
         $(".mbody").css("height", (h2 - 55) + "px");
 
         $(".dwn").css("display", "block");
-        $(".emb").css("display", "none");
+        $(".viw").css("display", "none");
     }
     else {
 
         $(".dwn").css("display", "none");
-        $(".emb").css("display", "block");
+        $(".viw").css("display", "block");
 
         if (w2 <= wt) {
             var zh = ((wt / w2) * h1);
@@ -138,19 +138,39 @@ function alignBody()
             $(".mbody").css("height", (h2 - 55) + "px");
         }
     }
-    // Embed Zoom
-    $.each($(".emb"), (i, item) => {
-        var k = $(item).attr("src");
-        if (k.indexOf("zoom=") != -1) {
-            var a = k.split("zoom=")[0] + "zoom=" + (90 / 100) * parseInt((w2 / w1) * 100);
-            $(item).attr("src", a);
-            var b = $("<div>").html($(item).clone());
-            $(item).parent().html(b.html());
-        }
-    })
     //
 }
 
+function viewAsset(tag)
+{ 
+    var file = $(tag).attr("pth");
+    $(tag).parent().parent().find(".emb").attr("src", file);
+    //
+    var rp = $(tag).attr("rp");
+    if (rp != "true")
+    {
+        $(tag).attr("rp", "true");
+        embd();
+        $(window).resize(function () { embd() });
+    }
+    function embd() {
+
+        // Embed Zoom
+        var w1 = 1218;
+        var w2 = $(window).outerWidth();
+        $.each($(".emb"), (i, item) => {
+            var k = $(item).attr("src");
+            if (k.indexOf("zoom=") != -1) {
+                $(item).css("display", "block");
+                var a = k.split("zoom=")[0] + "zoom=" + (90 / 100) * parseInt((w2 / w1) * 100);
+                $(item).attr("src", a);
+                var b = $("<div>").html($(item).clone());
+                $(item).parent().html(b.html());
+                $(item).css("display", "block");
+            }
+        })
+    }
+}
 function downloadAsset(tag)
 { 
     window.location.href = $(tag).attr("pth");

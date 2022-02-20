@@ -21,7 +21,9 @@ body {
         background: #717A7F;
         border-radius: 10px;
     }
-
+    .emb{
+        display:none;
+    }
 /*------------------------------------- Mobile Menu*/
 .lmenu {
     width: 300px;
