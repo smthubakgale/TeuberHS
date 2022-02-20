@@ -1,32 +1,19 @@
 ﻿//------------------------------ 0. 
-$(window).on("load",function () { respond(); });
+$(document).ready(function () { respond(); });
 $(window).resize(function () { respond(); });
 
 function respond()
 {
-    setTimeout(function ()
-    {
-        var k = $("head").find("#rsp");
-        if (k.length != 0) {
-            k.remove();
-        }
-
-        var a = $("<link/>");
-        a.prop("id", "rsp");
-        a.attr("rel", "stylesheet")
-
+    setTimeout(function () {
         $("body").css("display", "none");
         if (Condition()) {
-            a.attr("href", "assets/css/responsive.css");
+            $("#rsp").attr("href", "assets/css/responsive.css");
         }
         else {
-            a.attr("href", "assets/css/web.css");
+            $("#rsp").attr("href", "assets/css/web.css");
         }
-        $("head").append(a);
-        var b = $("body").html();
-        $("body").html(b);
         $("body").css("display", "block");
-    }, 15);
+    }, 2);
 }
 function Condition()
 {
