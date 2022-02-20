@@ -81,6 +81,8 @@ function alignBody()
         $("body").css("zoom", z);
         // Except
         z = ((wt / w2) * 100) + "%";
+
+        $(".mbl_menu").css("zoom", z); 
         $(".mbl_menu2").css("zoom", z);
         //
     }
@@ -90,6 +92,8 @@ function alignBody()
         $("body").css("zoom", z);
         // Except
         z = ((w1 / w2) * 100) + "%";
+
+        $(".mbl_menu").css("zoom", z);
         $(".mbl_menu2").css("zoom", z);
         // 
     }
