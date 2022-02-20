@@ -152,6 +152,7 @@ function viewAsset(tag)
         $(tag).attr("rp", "true");
         embd();
         $(window).resize(function () { embd() });
+        $(tag).css("display", "none");
     }
     function embd() {
 
