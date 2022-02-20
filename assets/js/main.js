@@ -4,25 +4,29 @@ $(window).resize(function () { respond(); });
 
 function respond()
 {
-    var k = $("head").find("#rsp");
-    if (k.length != 0) {
-        k.remove();
-    }
-
-    var a = $("<link/>");
-    a.prop("id", "rsp");
-    a.attr("rel" , "stylesheet")
-
-    $("body").css("display", "none"); 
-    if (Condition())
+    setTimeout(function ()
     {
-        a.attr("href", "assets/css/responsive.css");
-    }
-    else { 
-        a.attr("href", "assets/css/web.css");
-    }
-    $("head").append(a);
-    $("body").css("display","block");
+        var k = $("head").find("#rsp");
+        if (k.length != 0) {
+            k.remove();
+        }
+
+        var a = $("<link/>");
+        a.prop("id", "rsp");
+        a.attr("rel", "stylesheet")
+
+        $("body").css("display", "none");
+        if (Condition()) {
+            a.attr("href", "assets/css/responsive.css");
+        }
+        else {
+            a.attr("href", "assets/css/web.css");
+        }
+        $("head").append(a);
+        var b = $("body").html();
+        $("body").html(b);
+        $("body").css("display", "block");
+    }, 15);
 }
 function Condition()
 {
