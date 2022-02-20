@@ -4,22 +4,14 @@ $(window).resize(function () { respond(); });
 
 function respond()
 {
-    alert($(window).innerWidth());
     $("body").css("display", "none");
-    var a = $("body").html();
-
-    var mc = MobileCheck(); 
-    if (mc == "Mobile")
+    var a = $("body").html(); 
+    if (Condition())
     {
         $("#rsp").attr("href", "assets/css/responsive.css");
     }
-    else {
-        var w = $(window).innerWidth();
-        if (w < 850) {
-            $("#rsp").attr("href", "assets/css/responsive.css");
-        }
-        else {
-            $("#rsp").attr("href", "assets/css/web.css");}
+    else { 
+        $("#rsp").attr("href", "assets/css/web.css");
     } 
     $("body").html(a);
     $("body").css("display","block");
@@ -33,15 +25,15 @@ function Condition()
     if (mc == "Mobile") {
 
         if (width < height) {
-            return (width < 850);
+            return (width < 990);
         }
         else {
-            return (height < 850);
+            return (height < 990);
         }
 
     }
     else {
-        return (width < 850);
+        return (width < 990);
     }
 }
 function MobileCheck() {
@@ -78,14 +70,12 @@ $(window).on("load", function () { alignBody() })
 $(window).resize(function () { alignBody() })
 function alignBody()
 {
-    var mc = MobileCheck();
     // Body-Width
-    var wt = 850;
+    var wt = 990;
     var w1 = 1218;
     var w2 = $(window).outerWidth();
 
-    if (w2 < wt || mc == "Mobile")
-    {
+    if (w2 < wt) {
         // Zoom
         var z = ((w2 / wt) * 100) + "%";
         $("body").css("zoom", z);
@@ -94,8 +84,7 @@ function alignBody()
         $(".mbl_menu2").css("zoom", z);
         //
     }
-    else if (w2 > w1)
-    {
+    else if (w2 > w1) {
         // Zoom
         var z = ((w2 / w1) * 100) + "%";
         $("body").css("zoom", z);
@@ -109,7 +98,7 @@ function alignBody()
     }
     // Body-Height
     var h1 = 560;
-    var h2 = $(window).outerHeight(); 
+    var h2 = $(window).outerHeight();
     // Tag-Height 
     var ht = ["height", "min-height", "max-height", "margin-top", "margin-bottom"];
 
@@ -117,13 +106,13 @@ function alignBody()
         var hc = $("*").filter(function () { return ($(this).css(itm).indexOf("vh") != -1) });
 
         $.each(hc, (k, item) => {
-            var h = (parseFloat($(item).css(itm).replace("vh", "")) / 100)*(w1/w2)*h1 + "px";
+            var h = (parseFloat($(item).css(itm).replace("vh", "")) / 100) * h1 + "px";
             $(item).css(itm, h);
         });
     })
     // 
-    if (w2 < wt ) {
-        var zh = ((wt / w2)*(w1/w2)* h1);
+    if (w2 < wt) {
+        var zh = ((wt / w2) * h1);
 
         $(".mbody").parent().css("max-height", zh + "px");
         $(".mbody").css("height", (zh - 60) + "px");
@@ -198,7 +187,7 @@ function mnu() {
     var w = $(".mbl_menu2").outerWidth();
     var st = $(".mbl_menu2").attr("stt");
 
-    if (w <= 850) {
+    if (w <= 990) {
         if (st == "on") {
             $(".mbl_menu2").css("display", "block");
         }
