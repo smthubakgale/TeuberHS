@@ -4,16 +4,14 @@ $(window).resize(function () { respond(); });
 
 function respond()
 {
-    $("body").css("display", "none");
-    var a = $("body").html(); 
+    $("body").css("display", "none"); 
     if (Condition())
     {
         $("#rsp").attr("href", "assets/css/responsive.css");
     }
     else { 
         $("#rsp").attr("href", "assets/css/web.css");
-    } 
-    $("body").html(a);
+    }  
     $("body").css("display","block");
 }
 function Condition()
