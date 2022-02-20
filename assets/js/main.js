@@ -4,6 +4,7 @@ $(window).resize(function () { respond(); });
 
 function respond()
 {
+    alert($(window).innerWidth());
     $("body").css("display", "none");
     var a = $("body").html();
 
