@@ -108,7 +108,7 @@ function alignBody()
     }
     // Body-Height
     var h1 = 560;
-    var h2 = $(window).outerHeight();
+    var h2 = $(window).outerHeight(); 
     // Tag-Height 
     var ht = ["height", "min-height", "max-height", "margin-top", "margin-bottom"];
 
@@ -116,13 +116,13 @@ function alignBody()
         var hc = $("*").filter(function () { return ($(this).css(itm).indexOf("vh") != -1) });
 
         $.each(hc, (k, item) => {
-            var h = (parseFloat($(item).css(itm).replace("vh", "")) / 100) * h1 + "px";
+            var h = (parseFloat($(item).css(itm).replace("vh", "")) / 100)*(w1/w2)*h1 + "px";
             $(item).css(itm, h);
         });
     })
     // 
     if (w2 < wt ) {
-        var zh = ((wt / w2) * h1);
+        var zh = ((wt / w2)*(w1/w2)* h1);
 
         $(".mbody").parent().css("max-height", zh + "px");
         $(".mbody").css("height", (zh - 60) + "px");
