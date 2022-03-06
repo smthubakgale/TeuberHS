@@ -77,7 +77,7 @@ function alignBody()
     if (w2 <= wt) {
         // Zoom
         var z = ((w2 / wt) * 100) + "%";
-        $("body").css("zoom", z);
+        $(".mbody").css("zoom", z);
         // Except
         z = ((wt / w2) * 100) + "%";
 
@@ -86,7 +86,7 @@ function alignBody()
         //
     } 
     else {
-        $("body").css("zoom", "100%");
+        $(".mbody").css("zoom", "100%");
     }
     // Body-Height
     var h1 = 560;
