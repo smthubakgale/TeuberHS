@@ -1,15 +1,12 @@
-﻿.wb_menu {
+﻿
+.j1 {
+    width: 60%;
+}
+
+.j2 {
     display: flex;
 }
 
-.mbl_menu {
-    display: none;
-}
-
-.abt {
-    flex-direction: row-reverse;
-}
-
-.abt2 {
-    flex-direction: row;
+.j3 {
+    width: 100%;
 }
