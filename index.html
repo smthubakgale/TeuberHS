@@ -292,11 +292,15 @@
                             });
                         }
                         $(window).on("load", function () {
+
+                            alert($(window).outerWidth());
+
                             setInterval(function () {
                                 if ($("#ref").attr("start") == "true") {
                                     refresh();
                                 }
-                            }, 10000)
+                            }, 10000);
+
                         })
                     </script>
                 </div>
