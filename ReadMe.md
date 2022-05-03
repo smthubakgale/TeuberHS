@@ -2,15 +2,12 @@
 
 > https://kirazhang.com/posts/set-up-google-search-console-nextjs-vercel-website
 
-2. 
-npm i vercel -g
+2. Google Ad Sense
 
-vercel login
+> https://www.google.com/adsense
 
-vercel dns add https://teuber-hs.vercel.app
+3. Google ANalytics
 
-TXT
- 
-google-site-verification
+> https://analytics.google.com/analytics
 
-rAoR4h7dNUvuB592o83Uhrv_vQC17a_5NFGDUnN0GUk
+
