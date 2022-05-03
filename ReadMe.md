@@ -1,4 +1,8 @@
+1. Google Search Console
 
+> https://kirazhang.com/posts/set-up-google-search-console-nextjs-vercel-website
+
+2. 
 npm i vercel -g
 
 vercel login
