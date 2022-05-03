@@ -1,3 +1,4 @@
+
 npm i vercel -g
 
 vercel login
@@ -5,7 +6,7 @@ vercel login
 vercel dns add https://teuber-hs.vercel.app
 
 TXT
+ 
+google-site-verification
 
-teuber-hs
-
-google-site-verification=rAoR4h7dNUvuB592o83Uhrv_vQC17a_5NFGDUnN0GUk
+rAoR4h7dNUvuB592o83Uhrv_vQC17a_5NFGDUnN0GUk
